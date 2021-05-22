@@ -1,0 +1,50 @@
+[
+        {
+            "header" : "FlutterChatApp" ,
+            "url" : "https://ssrajputtheboss.github.io/flutter_chat_app/README.md",
+            "description" : "A text chat application build using Flutter. Backend is build with NodeJS." ,
+            "lang" : "Dart"
+        } ,
+        {
+            "header" : "Text-Highlight" ,
+            "url" : "https://ssrajputtheboss.github.io/text_highlight/README.md",
+            "description" : "A flutter widget for syntax highlighting supports upto 10 languages." ,
+            "lang" : "Dart"
+        } ,
+        {
+            "header" : "CircularBoard" ,
+            "url" : "https://ssrajputtheboss.github.io/Circularboard/README.md",
+            "description" : "A circular android keyboard." ,
+            "lang" : "Java"
+        } ,
+        {
+            "header" : "Pycooks" ,
+            "url" : "https://ssrajputtheboss.github.io/pycooks/README.md",
+            "description" : "Collection of python help files." ,
+            "lang" : "Python"
+        } ,
+        {
+            "header" : "WhatsappCloneUIChatApp" ,
+            "url" : "https://ssrajputtheboss.github.io/whatsapp-clone-ui-chat-app/README.md",
+            "description" : "A simple text chat app build with PERN stack." ,
+            "lang" : "JavaScript"
+        } ,
+        {
+            "header" : "VirtualAssitant" ,
+            "url" : "https://ssrajputtheboss.github.io/Virtual-Assistant/README.md",
+            "description" : "A Virtual Assistant that can help in telling weather cricket scores and other tasks through voice or text input" ,
+            "lang" : "Python"
+        } ,
+        {
+            "header" : "ScreenColorPicker" ,
+            "url" : "https://ssrajputtheboss.github.io/screen-color-picker/README.md",
+            "description" : "Tkinter application to pick screen color of clicked coordinates." ,
+            "lang" : "Python"
+        } ,
+        {
+            "header" : "FlutterChatAppAPI" ,
+            "url" : "https://ssrajputtheboss.github.io/flutter-chat-app-api/README.md",
+            "description" : "Backend code for flutter chat app" ,
+            "lang" : "JavaScript"
+        } 
+]
