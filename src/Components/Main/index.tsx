@@ -1,6 +1,6 @@
 import { 
     Box  ,
-    Grid,
+    Flex,
     Heading
 } from '@chakra-ui/react';
 import React from 'react';
@@ -44,9 +44,9 @@ export default function  Main() : React.ReactElement{
     p="2"
     >
         <Heading p="4" color="twitter.400">Projects</Heading>
-        <Grid
-        templateColumns={{lg:'repeat(2, 1fr)' , base: 'repeat(1,1fr)'}}
-        gap={3}
+        <Flex
+        flexDir="column"
+        alignItems="center"
         p={3}
         >
             {cards.map( (v : ProjectData , i) => {
@@ -54,10 +54,12 @@ export default function  Main() : React.ReactElement{
                         header = { v.header}
                         url = {v.url}
                         description = {v.description}
-                        lang={v.lang}
+                        langs={v.langs}
+                        stack={v.stack}
                 />;
             } )}
-        </Grid>   
+        </Flex>   
+
         <TerminalUI getCommand={function(cmd : string) : string{
             return execCommand( cmd , performOperation );
         }}/>

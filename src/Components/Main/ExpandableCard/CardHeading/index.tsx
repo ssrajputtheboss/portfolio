@@ -7,21 +7,27 @@ import {
 import React from 'react';
 import { CardHead } from '../../../../Models';
 
-export default function CardHeader( { title , lang } : CardHead ) :React.ReactElement{
+export default function CardHeader( { title , langs } : CardHead ) :React.ReactElement{
     return <Box
     w="full"
     p="4"
     >
         <Flex
+        flexDir="column"
         justifyContent="space-between"
-        alignItems="center"
+        alignItems="start"
         >
             <Text fontSize="xl" fontWeight="bold">{title}</Text>
-            <Tag
-            color="teal.400"
-            >
-                <Text fontSize="sm">{lang}</Text>
-            </Tag>
+            <Box>
+                {langs.map(({name})=>{
+                    return <Tag
+                    bgColor="teal.100"
+                    mx="1"
+                    >
+                        <Text textColor="green.300" fontSize="sm">{ name }</Text>
+                    </Tag>;
+                })}
+            </Box>
         </Flex>
     </Box>
 }

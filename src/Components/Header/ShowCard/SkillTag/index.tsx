@@ -10,6 +10,7 @@ import { Skill } from '../../../../Models';
 export default function SkillTag( { name , icon , iconColor } : Skill ):React.ReactElement{
     return <Tag
     maxW={{ base: "20" , lg:"2xl"}}
+    _hover={{ bgColor:"blue" }}
     >
         <Flex
         flexDir="column"

@@ -4,7 +4,7 @@ const data = jsonData;
 
 export const filterData : Function = ( lang : string ) : Array<ProjectData> => {
     return data.filter( ( v : ProjectData) => {
-        return v.lang.toLowerCase() === lang.toLowerCase();
+        return v.langs.map(({ name })=>{return name;}).includes(lang.toLocaleLowerCase());
     } );
 }
 
@@ -16,7 +16,7 @@ export const changeDirectory: Function = ( pname : string ) : Array<ProjectData>
 
 export const searchData : Function = ( word : string ) : Array<ProjectData> => {
     return data.filter( ( v : ProjectData) => {
-        return v.lang.toLowerCase().includes( word.toLowerCase() ) || v.url.toLowerCase().includes( word.toLowerCase() ) || v.header.toLowerCase().includes( word.toLowerCase() ) || v.description.toLowerCase().includes( word.toLowerCase() );
+        return v.langs.map(({name})=>{return name;}).join('').toLowerCase().includes( word.toLowerCase() ) || v.url.toLowerCase().includes( word.toLowerCase() ) || v.header.toLowerCase().includes( word.toLowerCase() ) || v.description.toLowerCase().includes( word.toLowerCase() );
     } );
 }
 

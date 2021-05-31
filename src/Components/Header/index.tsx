@@ -38,6 +38,8 @@ export default function Header() : React.ReactElement{
             <Tooltip
             hasArrow
             label={isOpen? 'Shrink':'Expand To Read About Me'}
+            textColor="white"
+            bgColor="blackAlpha.200"
             >
                 <IconButton
                 aria-label="Icon"

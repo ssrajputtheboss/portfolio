@@ -4,7 +4,13 @@ export interface ProjectData{
     header : string ,
     url : string ,
     description : string ,
-    lang : string
+    langs : Array<LangData>,
+    stack : Array<string>
+}
+
+export interface LangData{
+    name : string,
+    data : number
 }
 
 export interface ReadMeProps{
@@ -46,5 +52,10 @@ export interface Command{
 
 export interface CardHead{
     title : string ,
-    lang : string ,
+    langs : Array<LangData>
+}
+
+export interface PieData{
+    series : Array<number> ,
+    labels : Array<string>
 }

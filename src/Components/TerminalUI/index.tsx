@@ -30,8 +30,11 @@ export default function TerminalUI( {getCommand} : {getCommand :Function}) : Rea
         return <Tooltip
         hasArrow
         label="Open Terminal"
+        bgColor="blackAlpha.200"
+        textColor="white"
         >
             <IconButton
+                _hover={{ bgColor:"blue" }}
                 position="fixed"
                 bottom={{ base: "8", lg:"20"}}
                 right={{ base: "8", lg:"20"}}
