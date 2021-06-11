@@ -17,7 +17,7 @@ export default function TerminalUI( {getCommand} : {getCommand :Function}) : Rea
     const [ lastText , setLastText ] = useState<string>('');
     const [ isTerminalOpen , setIsTerminalOpen ] =  useState<boolean>(false);
     const execCommand = (command : string , input : HTMLInputElement)=>{
-        if(command === 'clear' ||  command === 'cls'){
+        if(command.toLowerCase() === 'clear' ||  command.toLowerCase() === 'cls'){
             getCommand( command );
             setLastText('');
         }else{
@@ -30,7 +30,7 @@ export default function TerminalUI( {getCommand} : {getCommand :Function}) : Rea
         return <Tooltip
         hasArrow
         label="Open Terminal"
-        bgColor="blackAlpha.200"
+        bgColor="blackAlpha.900"
         textColor="white"
         >
             <IconButton

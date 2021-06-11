@@ -60,7 +60,7 @@ export default function  ExpandableCard( props : ProjectData ) : React.ReactElem
             <Tooltip
             hasArrow
             label={ isOpen ? "close" : "explore" }
-            bgColor="blackAlpha.200"
+            bgColor="blackAlpha.900"
             textColor="white"
             >
                 <IconButton

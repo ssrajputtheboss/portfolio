@@ -24,7 +24,7 @@ export default function CardHeader( { title , langs } : CardHead ) :React.ReactE
                     bgColor="teal.100"
                     mx="1"
                     >
-                        <Text textColor="green.300" fontSize="sm">{ name }</Text>
+                        <Text textColor="green.900" fontSize="sm">{ name }</Text>
                     </Tag>;
                 })}
             </Box>

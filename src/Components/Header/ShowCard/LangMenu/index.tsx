@@ -5,7 +5,8 @@ import {
     Flex ,
     Menu ,
     MenuList ,
-    MenuButton
+    MenuButton ,
+    Icon
 } from '@chakra-ui/react';
 import { 
     SiJavascript,
@@ -25,12 +26,12 @@ export default function LangMenu():React.ReactElement{
             alignItems="center"
             p="2"
             m="1"
-            borderColor="black"
+            borderColor="tomato"
             borderWidth="medium"
-            bgColor="green.200"
+            bgColor="seashell"
             >
-                <Text mr="2" fontSize="sm" fontWeight="bold" color="green.900">Programming Languages</Text>
-                <FaChevronRight/>
+                <Text mr="2" textColor="green.900" fontSize="sm" fontWeight="bold">Programming Languages</Text>
+                <Icon as={FaChevronRight} color="green.900"/>
             </Flex>
         </MenuButton>
         <MenuList>
@@ -42,8 +43,8 @@ export default function LangMenu():React.ReactElement{
                     <SkillTag icon={ SiJavascript } name="JavaScript" iconColor="yellow.400" />
                     <SkillTag icon={ SiTypescript } name="TypeScript" iconColor="yellow.400" />
                     <SkillTag icon={ SiJava } name="Java" iconColor="red.500" />
-                    <SkillTag icon={ SiCplusplus } name="C++" iconColor="blue.300" />
-                    <SkillTag icon={ SiDart } name="Dart" iconColor="blue.100" />
+                    <SkillTag icon={ SiCplusplus } name="C++" iconColor="blue.900" />
+                    <SkillTag icon={ SiDart } name="Dart" iconColor="blue.200" />
                 </Grid>
         </MenuList>
     </Menu>;

@@ -39,7 +39,7 @@ export default function Header() : React.ReactElement{
             hasArrow
             label={isOpen? 'Shrink':'Expand To Read About Me'}
             textColor="white"
-            bgColor="blackAlpha.200"
+            bgColor="blackAlpha.900"
             >
                 <IconButton
                 aria-label="Icon"

@@ -5,7 +5,8 @@ import {
     Flex ,
     Menu ,
     MenuList ,
-    MenuButton
+    MenuButton ,
+    Icon
 } from '@chakra-ui/react';
 import { RiFlutterFill } from 'react-icons/ri';
 import { 
@@ -24,12 +25,12 @@ export default function SkillMenu():React.ReactElement{
             alignItems="center"
             p="2"
             m="1"
-            borderColor="black"
+            borderColor="tomato"
             borderWidth="medium"
-            bgColor="green.200"
+            bgColor="seashell"
             >
-                <Text mr="2" fontSize="sm" fontWeight="bold" color="green.900">Skills</Text>
-                <FaChevronRight/>
+                <Text mr="2" textColor="green.900" fontSize="sm" fontWeight="bold">Skills</Text>
+                <Icon as={FaChevronRight} color="green.900"/>
             </Flex>
         </MenuButton>
         <MenuList>
