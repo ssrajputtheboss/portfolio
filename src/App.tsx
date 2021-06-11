@@ -1,7 +1,6 @@
 import { 
   ChakraProvider ,
   Box ,
-  Heading 
   } from '@chakra-ui/react';
 import Header  from './Components/Header';
 import Main from './Components/Main';
@@ -13,8 +12,8 @@ export default function App() {
       textAlign="center"
       alignItems="center"
       p="4"
+      w="100px"
       >
-        <Heading>PORTFOLIO</Heading>
       </Box>
       <Main/>
       <Header/>

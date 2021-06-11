@@ -43,7 +43,7 @@ export default function  Main() : React.ReactElement{
     h="full"
     p="2"
     >
-        <Heading p="4" color="twitter.400">Projects</Heading>
+        <Heading p="4" color="twitter.500" textAlign="center">Projects</Heading>
         <Flex
         flexDir="column"
         alignItems="center"
