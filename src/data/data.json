@@ -87,23 +87,44 @@
             }]
         } ,
         {
-            "header" : "ScreenColorPicker" ,
-            "url" : "https://ssrajputtheboss.github.io/screen-color-picker/README.md",
-            "description" : "Tkinter application to pick screen color of clicked coordinates." ,
-            "stack":["Python"],
+            "header" : "Collab-Code" ,
+            "url" : "https://ssrajputtheboss.github.io/collab-code-web/README.md",
+            "description" : "A realtime multiuser collaboration coding platform." ,
+            "stack":["Html"],
             "langs" : [{
-                "name": "Python",
-                "data": 100.0
+                "name": "JavaScript",
+                "data": 62.2
+            },{
+                "name":"HTML",
+                "data":37.4
+            },{
+                "name":"CSS",
+                "data":0.4
             }]
         } ,
         {
-            "header" : "FlutterChatAppAPI" ,
-            "url" : "https://ssrajputtheboss.github.io/flutter-chat-app-api/README.md",
-            "description" : "Backend code for flutter chat app" ,
-            "stack":["Flutter","NodeJS","PostgreSQL","Express"],
+            "header" : "Collab-Code-Api" ,
+            "url" : "https://ssrajputtheboss.github.io/collab-code-api/README.md",
+            "description" : "Server side coding for CollabCode web. Containerized appliication with docker." ,
+            "stack":["NodeJS","MongoDB","Express"],
             "langs" : [{
-                "name": "JavaScript",
-                "data": 100.0
+                "name": "TypeScript",
+                "data": 89.1
+            },{
+                "name": "Java",
+                "data": 3.4
+            },{
+                "name": "C++",
+                "data": 2.4
+            },{
+                "name": "Dockerfile",
+                "data": 2.1
+            },{
+                "name": "C",
+                "data": 1.9
+            },{
+                "name": "Python",
+                "data": 1.1
             }]
         } 
 ]

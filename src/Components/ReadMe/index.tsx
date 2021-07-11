@@ -9,6 +9,8 @@ import { fetchReadMeFromURL, getReadMeJSON } from "../../helpers";
 import { useState } from "react";
 import { useEffect } from "react";
 import GetReadMeWidget from "./GetReadMeWidget";
+import ReactMarkdown from 'react-markdown';
+import gfm from "remark-gfm";
 
 export default function ReadMe( { src } : ReadMeProps ) : React.ReactElement{
     const [ text , setText ] = useState<string>('');
@@ -19,6 +21,8 @@ export default function ReadMe( { src } : ReadMeProps ) : React.ReactElement{
         };
         fetchData();
     } );
+    if(src === 'https://ssrajputtheboss.github.io/collab-code-web/README.md' || src ==='https://ssrajputtheboss.github.io/collab-code-api/README.md')
+        return <ReactMarkdown remarkPlugins={[gfm]} children={text} />;
     const readmeJson : Map< ReadMeKey , ReadMeValue > = getReadMeJSON( text );
     const imgUrls : Array< [ReadMeKey , ReadMeValue]> = Array.from(readmeJson).filter( ( [k,v], i ) => {
         return k.info === 'image';

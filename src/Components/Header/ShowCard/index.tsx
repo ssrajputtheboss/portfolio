@@ -70,7 +70,7 @@ export default function ShowCard(props: Props): React.ReactElement{
                             w="7"
                             mx="2"
                             >
-                                <Icon as={ CgOrganisation } h="5" w="5" color="grey.400" />
+                                <Icon as={ CgOrganisation } h="5" w="5" color="white" />
                             </IconButton>
                            <Text fontSize="sm" fontWeight="medium" color="green.900"> IIIT Kottayam </Text> 
                         </Flex>
