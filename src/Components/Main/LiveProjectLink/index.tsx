@@ -23,7 +23,7 @@ export const LiveProjectLink = ({ projectLink,isLive } : LiveProjectData):React.
     rounded="md"
     >
         <Text mx="4" fontWeight="bold">This project is live!</Text>   
-        <Link fontWeight="bold" bgColor="blue.400" rounded="lg" p="2" mx="6" href={projectLink} >
+        <Link target="_blank" fontWeight="bold" bgColor="blue.400" rounded="lg" p="2" mx="6" href={projectLink} >
             Click Here
             <Icon as={FiArrowRight} />
         </Link>  
