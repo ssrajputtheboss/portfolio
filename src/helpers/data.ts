@@ -4,7 +4,7 @@ const data = jsonData;
 
 export const filterData : Function = ( lang : string ) : Array<ProjectData> => {
     return data.filter( ( v : ProjectData) => {
-        return v.langs.map(({ name })=>{return name;}).includes(lang.toLocaleLowerCase());
+        return v.langs.map(({ name })=>name.toLowerCase()).includes(lang.toLocaleLowerCase());
     } );
 }
 

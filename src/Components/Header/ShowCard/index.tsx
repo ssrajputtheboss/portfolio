@@ -41,6 +41,12 @@ export default function ShowCard(props: Props): React.ReactElement{
                 transform={{ base:'rotate(0deg)' , lg:'rotate(-90deg)'}} 
                 p="2"
                 > SHASHANK SINGH </Text>
+                <Text
+                textColor="black" 
+                fontSize="md"
+                fontWeight="medium"  
+                transform={{ base:'rotate(0deg)' , lg:'rotate(-90deg)'}} 
+                p="2">{"Full stack developer"}</Text>
             </Flex>
             <Flex
                 flexDir="column"

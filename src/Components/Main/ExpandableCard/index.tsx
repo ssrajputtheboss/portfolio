@@ -16,6 +16,7 @@ import {
 import ReadMe from '../../ReadMe';
 import { ProjectData } from '../../../Models';
 import Donut from '../../Donut';
+import { LiveProjectLink } from '../LiveProjectLink'; 
 
 export default function  ExpandableCard( props : ProjectData ) : React.ReactElement{
     var [isOpen, setIsOpen] = useState<boolean>(false);
@@ -44,6 +45,7 @@ export default function  ExpandableCard( props : ProjectData ) : React.ReactElem
                     flexDir="column"
                     justifyContent="space-between"
                     alignItems="start"
+                    w="full"
                     >
                         <CardHeading title={props.header} langs={props.langs} />
                         <Text p="4" fontSize="sm" > {props.description} </Text>
@@ -53,6 +55,7 @@ export default function  ExpandableCard( props : ProjectData ) : React.ReactElem
                         >
                             <ReadMe src={props.url} />
                         </Box>
+                        <LiveProjectLink isLive={props.isLive} projectLink={props.projectLink} />
                     </Flex>
                     <Donut series={props.langs.map(({data})=>{return data;})} labels={props.langs.map(({name})=>{return name;})} />
                 </Flex>

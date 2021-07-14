@@ -80,6 +80,7 @@ export default function TerminalUI( {getCommand} : {getCommand :Function}) : Rea
                     flexDir="row"
                     justifyContent="start"
                     alignItems="center"
+                    key={i}
                     >
                         <Text px="1" textColor = "green.400" >{v.substring(0,2)}</Text>
                         <Text px="1" textColor = "white">{v.substring(2,v.length) || ''}</Text>

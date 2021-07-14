@@ -102,7 +102,7 @@ export const execCommand : Function = ( command: string  , callback : Function )
         }
     }else{
         callback(cjson);
-        return `Invalid Command : ${command}`;
+        return `Invalid Command`;
     }
 }
 

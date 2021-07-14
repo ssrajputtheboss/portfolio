@@ -1,6 +1,11 @@
 import { IconType } from "react-icons/lib";
 
-export interface ProjectData{
+export interface LiveProjectData{
+    projectLink : string,
+    isLive : boolean
+}
+
+export interface ProjectData extends LiveProjectData{
     header : string ,
     url : string ,
     description : string ,

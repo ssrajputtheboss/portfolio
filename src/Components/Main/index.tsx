@@ -51,12 +51,15 @@ export default function  Main() : React.ReactElement{
         >
             {cards.map( (v : ProjectData , i) => {
                return  <ExpandableCard
-                        header = { v.header}
-                        url = {v.url}
-                        description = {v.description}
-                        langs={v.langs}
-                        stack={v.stack}
-                />;
+               key={i}
+               projectLink={ v.projectLink }
+               isLive = { v.isLive }
+               header = { v.header }
+               url = {v.url}
+               description = {v.description}
+               langs={v.langs}
+               stack={v.stack}
+           />
             } )}
         </Flex>   
 
