@@ -13,6 +13,7 @@ import {
 import { getHeaderSize } from "../../../helpers";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import parse from 'html-react-parser'; 
 
 export default function GetReadMeWidget( { rkey , rvalue} : { rkey : ReadMeKey , rvalue: ReadMeValue}) : React.ReactElement{
     if( rkey.type === 'header'){
@@ -21,11 +22,12 @@ export default function GetReadMeWidget( { rkey , rvalue} : { rkey : ReadMeKey ,
         >
             <Text fontWeight="bold" fontSize={ getHeaderSize( rkey.info) }> {rvalue.title} </Text>
             <Divider orientation="horizontal" />
-            <Text fontSize="smaller"> {rvalue.content} </Text>
+            <Text fontSize="smaller"> {parse(rvalue.content)} </Text>
         </Flex>;
     }
     else if( rkey.type === 'code' ){
-        return <Box maxW={{ base:"100%" , lg:"xl"}} m="2" p="5"><SyntaxHighlighter
+        return <Box maxW={{ base:"100%" , lg:"xl"}} m="2" p="5">
+        <SyntaxHighlighter
         showLineNumbers={true}
         language={rkey.info}
         style={docco}

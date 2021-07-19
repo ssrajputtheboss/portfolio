@@ -54,18 +54,6 @@
             }]
         } ,
         {
-            "header" : "Pycooks" ,
-            "url" : "https://ssrajputtheboss.github.io/pycooks/README.md",
-            "description" : "Collection of python help files." ,
-            "stack":["Python"],
-            "isLive":false,
-            "projectLink":"#",
-            "langs" : [{
-                "name": "Python",
-                "data": 100.0
-            }]
-        } ,
-        {
             "header" : "WhatsappCloneUIChatApp" ,
             "url" : "https://ssrajputtheboss.github.io/whatsapp-clone-ui-chat-app/README.md",
             "description" : "A simple text chat app build with PERN stack." ,

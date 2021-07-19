@@ -21,7 +21,7 @@ export default function ReadMe( { src } : ReadMeProps ) : React.ReactElement{
         };
         fetchData();
     } );
-    if(src === 'https://ssrajputtheboss.github.io/collab-code-web/README.md' || src ==='https://ssrajputtheboss.github.io/collab-code-api/README.md')
+    if(src ==='https://ssrajputtheboss.github.io/collab-code-api/README.md')
         return <ReactMarkdown remarkPlugins={[gfm]} children={text} />;
     const readmeJson : Map< ReadMeKey , ReadMeValue > = getReadMeJSON( text );
     const imgUrls : Array< [ReadMeKey , ReadMeValue]> = Array.from(readmeJson).filter( ( [k,v], i ) => {

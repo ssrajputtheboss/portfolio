@@ -31,7 +31,7 @@ export const extractCodeAndLinkFromReadMe : Function = ( text : string ) : Retur
     if( !_.isNull(codes) ){
         for(let i=0;i<codes.length;++i){
             list.push( codes[i].toString() );
-            text = text.replace( codes[i].toString() , '\0' );
+            text = text.replace( codes[i].toString() , '\u0000' );
         }
     }
     return {
@@ -49,47 +49,10 @@ export const getReadMeJSON : Function = ( data : string ) :  Map< ReadMeKey , Re
     let lastHeader :ReadMeKey = {
         type:'',
         info : '' ,
-        index: -1
+        index: 0
     }; 
     for( let line of lines ){
-        if( line === '\0' ){
-            if( list[k].match( reCode ) ){
-                let lang : RegExpExecArray|null = /```(\w+)/.exec( list[k] );
-                if( !_.isNull(lang)){
-                    obj.set( {
-                        type: 'code' ,
-                        info: lang[0].toString(),
-                        index : i
-                    } , {
-                        title:'',
-                        content : list[k].replace(/```(\w+)|```/g , '')
-                    } );
-                }
-            }else{
-                let link : string = list[k].replace(/\[|!|\)/g , '').replace(/\]\s*\(/g , '\0').trim();
-                let [title , url] = link.split('\0'); 
-                if(list[k].includes( '.png' ) || list[k].includes( '.jpg' ) || list[k].includes( '.jpeg' )){
-                    obj.set( {
-                        type: 'link',
-                        info: 'image',
-                        index: i
-                    } , {
-                        title: title,
-                        content: url
-                    } );
-                }else{
-                    obj.set(  {
-                        type: 'link',
-                        info: 'normal',
-                        index: i
-                    } , {
-                        title: title,
-                        content: url
-                    } );
-                }
-            }
-            k++;
-        }else{
+        if(!line.includes('\u0000')){//no \0 present
             if( line.startsWith('#')){
                 const hashes : RegExpMatchArray|null = line.match(/#+/g);
                 const count:number = _.isNull( hashes ) ? 1: hashes[0].toString().length;
@@ -109,8 +72,56 @@ export const getReadMeJSON : Function = ( data : string ) :  Map< ReadMeKey , Re
                     content: obj.get( lastHeader)?.content+line || line
                 });
             }
+            ++i;
+        }else{
+            const parts= line.split('\u0000')
+            for(let j=0;j<(parts.length-1);++j){
+                //line.replace('\u0000',list[k])
+                obj.set( lastHeader , {
+                    title : obj.get(lastHeader)?.title || '' ,
+                    content: obj.get( lastHeader)?.content+parts[j] || parts[j]
+                });
+                if( list[k].match( reCode ) ){
+                    ++i;
+                    let lang : RegExpExecArray|null = /```(\w+)/.exec( list[k] );
+                    if(lang){
+                        obj.set( {
+                            type: 'code' ,
+                            info: lang[0].toString(),
+                            index : i
+                        } , {
+                            title:'',
+                            content : list[k].replace(/```(\w+)|```/g , '')
+                        } );
+                    }
+                }else{
+                    let link : string = list[k].replace(/\[|!|\)/g , '').replace(/\]\s*\(/g , '\0').trim();
+                    let [title , url] = link.split('\0'); 
+                    if(list[k].includes( '.png' ) || list[k].includes( '.jpg' ) || list[k].includes( '.jpeg' ) || list[k].includes( '.gif' )){
+                        ++i;
+                        obj.set( {
+                            type: 'link',
+                            info: 'image',
+                            index: i
+                        } , {
+                            title: title,
+                            content: url
+                        } );
+                    }else{
+                        obj.set( lastHeader , {
+                            title : obj.get(lastHeader)?.title || '' ,
+                            content: obj.get( lastHeader)?.content+line.replace('\u0000',`<a href="${url}">${title}</a>`) || line.replace('\u0000',`<a href="${url}">${title}</a>`)
+                        });
+                    }
+                }
+                k++;
+            }
+            obj.set( lastHeader , {
+                title : obj.get(lastHeader)?.title || '' ,
+                content: obj.get( lastHeader)?.content+parts[parts.length-1] || parts[parts.length-1]
+            });
+            ++i;
         }
-        ++i;
     }
     return obj;
 }
