@@ -42,7 +42,7 @@ export default function LangMenu():React.ReactElement{
                     <SkillTag icon={ SiJava } name="Java" iconColor="red.500" />
                     <SkillTag icon={ SiCplusplus } name="C++" iconColor="blue.900" />
                     <SkillTag icon={ SiDart } name="Dart" iconColor="blue.200" />
-                    <SkillTag icon={ SiC } name="Dart" iconColor="blue.400" />
+                    <SkillTag icon={ SiC } name="C" iconColor="blue.400" />
                 </Grid>
         </MenuList>
     </Menu>;
