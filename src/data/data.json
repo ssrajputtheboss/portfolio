@@ -107,7 +107,7 @@
         {
             "header" : "Collab-Code-Api" ,
             "url" : "https://ssrajputtheboss.github.io/collab-code-api/README.md",
-            "description" : "Server side coding for CollabCode web. Containerized appliication with docker." ,
+            "description" : "Server side coding for CollabCode web. Containerized application with docker." ,
             "stack":["NodeJS","MongoDB","Express"],
             "isLive":true,
             "projectLink":"https://collab-code-api.herokuapp.com/",
