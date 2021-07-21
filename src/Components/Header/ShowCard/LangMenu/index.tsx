@@ -12,7 +12,8 @@ import {
     SiPython,
     SiJava,
     SiCplusplus,
-    SiDart
+    SiDart,
+    SiC
 } from 'react-icons/si';
 import { FaChevronRight } from 'react-icons/fa';
 import SkillTag from "../SkillTag";
@@ -41,6 +42,7 @@ export default function LangMenu():React.ReactElement{
                     <SkillTag icon={ SiJava } name="Java" iconColor="red.500" />
                     <SkillTag icon={ SiCplusplus } name="C++" iconColor="blue.900" />
                     <SkillTag icon={ SiDart } name="Dart" iconColor="blue.200" />
+                    <SkillTag icon={ SiC } name="Dart" iconColor="blue.400" />
                 </Grid>
         </MenuList>
     </Menu>;

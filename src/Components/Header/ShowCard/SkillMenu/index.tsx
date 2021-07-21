@@ -13,7 +13,7 @@ import {
     SiAndroidstudio ,
     SiReact ,
     SiNodeDotJs ,
-    SiDjango ,
+//    SiDjango ,
     SiDocker ,
     SiSpring,
     SiJavascript,
@@ -48,7 +48,6 @@ export default function SkillMenu():React.ReactElement{
                     <SkillTag icon={ SiAndroidstudio } name="Android" iconColor="green.500" />
                     <SkillTag icon={ SiReact } name="React" iconColor="blue.700" />
                     <SkillTag icon={ SiNodeDotJs } name="NodeJS" iconColor="green.400" />
-                    <SkillTag icon={ SiDjango } name="Django" iconColor="blue.400" />
                     <SkillTag icon={ SiDocker } name="Docker" iconColor="blue.500" />
                     <SkillTag icon={ SiSpring } name="Spring Boot" iconColor="green.400" />
                 </Grid>
