@@ -8,10 +8,8 @@ import {
     MenuButton ,
     Icon
 } from '@chakra-ui/react';
-import { 
-    SiJavascript,
+import {
     SiPython,
-    SiTypescript,
     SiJava,
     SiCplusplus,
     SiDart
@@ -40,8 +38,6 @@ export default function LangMenu():React.ReactElement{
                 gap={2}
                 p={2}>
                     <SkillTag icon={ SiPython } name="Python" iconColor="blue.600" />
-                    <SkillTag icon={ SiJavascript } name="JavaScript" iconColor="yellow.400" />
-                    <SkillTag icon={ SiTypescript } name="TypeScript" iconColor="yellow.400" />
                     <SkillTag icon={ SiJava } name="Java" iconColor="red.500" />
                     <SkillTag icon={ SiCplusplus } name="C++" iconColor="blue.900" />
                     <SkillTag icon={ SiDart } name="Dart" iconColor="blue.200" />

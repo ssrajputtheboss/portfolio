@@ -15,7 +15,9 @@ import {
     SiNodeDotJs ,
     SiDjango ,
     SiDocker ,
-    SiSpring
+    SiSpring,
+    SiJavascript,
+    SiTypescript,
 } from 'react-icons/si';
 import { FaChevronRight } from 'react-icons/fa';
 import SkillTag from "../SkillTag";
@@ -40,6 +42,8 @@ export default function SkillMenu():React.ReactElement{
                 templateColumns={{lg:'repeat(4, 1fr)' , base: 'repeat(3,1fr)'}}
                 gap={2}
                 p={2}>
+                    <SkillTag icon={ SiJavascript } name="JavaScript" iconColor="yellow.400" />
+                    <SkillTag icon={ SiTypescript } name="TypeScript" iconColor="yellow.400" />
                     <SkillTag icon={ RiFlutterFill } name="Flutter" iconColor="blue.400" />
                     <SkillTag icon={ SiAndroidstudio } name="Android" iconColor="green.500" />
                     <SkillTag icon={ SiReact } name="React" iconColor="blue.700" />
