@@ -44,7 +44,7 @@
         {
             "header" : "CircularBoard" ,
             "url" : "https://ssrajputtheboss.github.io/Circularboard/README.md",
-            "description" : "A circular android keyboard." ,
+            "description" : "A circular shaped android keyboard." ,
             "stack":["Java"],
             "isLive":false,
             "projectLink":"#",
@@ -89,7 +89,7 @@
         {
             "header" : "Collab-Code" ,
             "url" : "https://ssrajputtheboss.github.io/collab-code-web/README.md",
-            "description" : "A realtime multiuser collaboration coding platform." ,
+            "description" : "A real-time multiuser collaboration coding platform." ,
             "stack":["Html"],
             "isLive":true,
             "projectLink":"https://ssrajputtheboss.github.io/collab-code-web/",
