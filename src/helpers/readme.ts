@@ -110,7 +110,7 @@ export const getReadMeJSON : Function = ( data : string ) :  Map< ReadMeKey , Re
                     }else{
                         obj.set( lastHeader , {
                             title : obj.get(lastHeader)?.title || '' ,
-                            content: obj.get( lastHeader)?.content+line.replace('\u0000',`<a href="${url}">${title}</a>`) || line.replace('\u0000',`<a href="${url}">${title}</a>`)
+                            content: obj.get( lastHeader)?.content+`<a href="${url}" style="color:blue;">${" "+title+" "}</a>` || `<a href="${url}">${title}</a>`
                         });
                     }
                 }
