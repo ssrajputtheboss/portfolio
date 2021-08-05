@@ -22,7 +22,7 @@ export default function GetReadMeWidget( { rkey , rvalue} : { rkey : ReadMeKey ,
         >
             <Text fontWeight="bold" fontSize={ getHeaderSize( rkey.info) }> {rvalue.title} </Text>
             <Divider orientation="horizontal" />
-            <Text fontSize="smaller"> {parse(rvalue.content)} </Text>
+            <Text fontSize="smaller"> {parse(rvalue.content.replace(/\n/g,'<br>'))} </Text>
         </Flex>;
     }
     else if( rkey.type === 'code' ){

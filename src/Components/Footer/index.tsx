@@ -18,11 +18,11 @@ export const Footer = ():React.ReactElement =>{
         SiLinkedin
     ]
     const colors = [
-        'black',
+        'white',
         'twitter.500',
         'blue.800'
     ]
-    return <footer style={{ height:'fit-content', width:'100%' }}>
+    return <footer style={{ height:'fit-content', width:'100vw' }}>
         <Flex
         flexDir="row"
         justifyContent="space-around"
