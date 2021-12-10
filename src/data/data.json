@@ -1,134 +1,152 @@
 [
-        {
-            "header" : "FlutterChatApp" ,
-            "url" : "https://ssrajputtheboss.github.io/flutter_chat_app/README.md",
-            "description" : "A text chat application build using Flutter. Backend is build with NodeJS." ,
-            "stack":["Flutter","NodeJS","PostgreSQL","Express"],
-            "isLive":false,
-            "projectLink":"#",
-            "langs" : [{
-                "name": "Dart",
-                "data": 98.1
-            },
-            {
-                "name": "C#",
-                "data": 1.6
-            },
-            {
-                "name": "Java",
-                "data": 0.3
-            }
-            ]
-        } ,
-        {
-            "header" : "Text-Highlight" ,
-            "url" : "https://ssrajputtheboss.github.io/text_highlight/README.md",
-            "description" : "A flutter widget for syntax highlighting supports upto 10 languages." ,
-            "stack":["Flutter"],
-            "isLive":true,
-            "projectLink":"https://pub.dev/packages/text_highlight",
-            "langs" : [{
-                "name": "Dart",
-                "data": 96.3
-            },
-            {
-                "name": "HTML",
-                "data": 2.7
-            },
-            {
-                "name": "Others",
-                "data": 1.0
-            }
-            ]
-        } ,
-        {
-            "header" : "CircularBoard" ,
-            "url" : "https://ssrajputtheboss.github.io/Circularboard/README.md",
-            "description" : "A circular shaped android keyboard." ,
-            "stack":["Java"],
-            "isLive":false,
-            "projectLink":"#",
-            "langs" : [{
-                "name": "Java",
-                "data": 100.0
-            }]
-        } ,
-        {
-            "header" : "WhatsappCloneUIChatApp" ,
-            "url" : "https://ssrajputtheboss.github.io/whatsapp-clone-ui-chat-app/README.md",
-            "description" : "A simple text chat app build with PERN stack." ,
-            "stack":["React","NodeJS","PostgreSQL","Express"],
-            "isLive":false,
-            "projectLink":"#",
-            "langs" : [{
-                "name": "JavaScript",
-                "data": 78.1
-            },
-            {
-                "name": "CSS",
-                "data": 15.3
-            },
-            {
-                "name": "HTML",
-                "data": 6.6
-            }
-            ]
-        } ,
-        {
-            "header" : "VirtualAssitant" ,
-            "url" : "https://ssrajputtheboss.github.io/Virtual-Assistant/README.md",
-            "description" : "A Virtual Assistant that can help in telling weather cricket scores and other tasks through voice or text input" ,
-            "stack":["Python","SQLite3"],
-            "isLive":false,
-            "projectLink":"#",
-            "langs" : [{
-                "name": "Python",
-                "data": 100.0
-            }]
-        } ,
-        {
-            "header" : "Collab-Code" ,
-            "url" : "https://ssrajputtheboss.github.io/collab-code-web/README.md",
-            "description" : "A real-time multiuser collaboration coding platform." ,
-            "stack":["Html"],
-            "isLive":true,
-            "projectLink":"https://ssrajputtheboss.github.io/collab-code-web/",
-            "langs" : [{
-                "name": "JavaScript",
-                "data": 62.2
-            },{
-                "name":"HTML",
-                "data":37.4
-            },{
-                "name":"CSS",
-                "data":0.4
-            }]
-        } ,
-        {
-            "header" : "Collab-Code-Api" ,
-            "url" : "https://ssrajputtheboss.github.io/collab-code-api/README.md",
-            "description" : "Server side coding for CollabCode web. Containerized application with docker." ,
-            "stack":["NodeJS","MongoDB","Express"],
-            "isLive":true,
-            "projectLink":"https://collab-code-api.herokuapp.com/",
-            "langs" : [{
-                "name": "TypeScript",
-                "data": 89.1
-            },{
-                "name": "Java",
-                "data": 3.4
-            },{
-                "name": "C++",
-                "data": 2.4
-            },{
-                "name": "Dockerfile",
-                "data": 2.1
-            },{
-                "name": "C",
-                "data": 1.9
-            },{
-                "name": "Python",
-                "data": 1.1
-            }]
-        } 
+  {
+    "header": "FlutterChatApp",
+    "url": "https://ssrajputtheboss.github.io/flutter_chat_app/README.md",
+    "description": "A text chat application build using Flutter. Backend is build with NodeJS.",
+    "stack": ["Flutter", "NodeJS", "PostgreSQL", "Express"],
+    "isLive": false,
+    "projectLink": "#",
+    "langs": [
+      {
+        "name": "Dart",
+        "data": 98.1
+      },
+      {
+        "name": "C#",
+        "data": 1.6
+      },
+      {
+        "name": "Java",
+        "data": 0.3
+      }
+    ]
+  },
+  {
+    "header": "Text-Highlight",
+    "url": "https://ssrajputtheboss.github.io/text_highlight/README.md",
+    "description": "A flutter widget for syntax highlighting supports upto 10 languages.",
+    "stack": ["Flutter"],
+    "isLive": true,
+    "projectLink": "https://pub.dev/packages/text_highlight",
+    "langs": [
+      {
+        "name": "Dart",
+        "data": 96.3
+      },
+      {
+        "name": "HTML",
+        "data": 2.7
+      },
+      {
+        "name": "Others",
+        "data": 1.0
+      }
+    ]
+  },
+  {
+    "header": "CircularBoard",
+    "url": "https://ssrajputtheboss.github.io/Circularboard/README.md",
+    "description": "A circular shaped android keyboard.",
+    "stack": ["Java"],
+    "isLive": false,
+    "projectLink": "#",
+    "langs": [
+      {
+        "name": "Java",
+        "data": 100.0
+      }
+    ]
+  },
+  {
+    "header": "WhatsappCloneUIChatApp",
+    "url": "https://ssrajputtheboss.github.io/whatsapp-clone-ui-chat-app/README.md",
+    "description": "A simple text chat app build with PERN stack.",
+    "stack": ["React", "NodeJS", "PostgreSQL", "Express"],
+    "isLive": false,
+    "projectLink": "#",
+    "langs": [
+      {
+        "name": "JavaScript",
+        "data": 78.1
+      },
+      {
+        "name": "CSS",
+        "data": 15.3
+      },
+      {
+        "name": "HTML",
+        "data": 6.6
+      }
+    ]
+  },
+  {
+    "header": "VirtualAssitant",
+    "url": "https://ssrajputtheboss.github.io/Virtual-Assistant/README.md",
+    "description": "A Virtual Assistant that can help in telling weather cricket scores and other tasks through voice or text input",
+    "stack": ["Python", "SQLite3"],
+    "isLive": false,
+    "projectLink": "#",
+    "langs": [
+      {
+        "name": "Python",
+        "data": 100.0
+      }
+    ]
+  },
+  {
+    "header": "Collab-Code",
+    "url": "https://ssrajputtheboss.github.io/collab-code-web/README.md",
+    "description": "A real-time multiuser collaboration coding platform.",
+    "stack": ["Html"],
+    "isLive": true,
+    "projectLink": "https://ssrajputtheboss.github.io/collab-code-web/",
+    "langs": [
+      {
+        "name": "JavaScript",
+        "data": 62.2
+      },
+      {
+        "name": "HTML",
+        "data": 37.4
+      },
+      {
+        "name": "CSS",
+        "data": 0.4
+      }
+    ]
+  },
+  {
+    "header": "Collab-Code-Api",
+    "url": "https://ssrajputtheboss.github.io/collab-code-api/README.md",
+    "description": "Server side coding for CollabCode web. Containerized application with docker.",
+    "stack": ["NodeJS", "MongoDB", "Express"],
+    "isLive": true,
+    "projectLink": "https://collab-code-api.herokuapp.com/",
+    "langs": [
+      {
+        "name": "TypeScript",
+        "data": 89.1
+      },
+      {
+        "name": "Java",
+        "data": 3.4
+      },
+      {
+        "name": "C++",
+        "data": 2.4
+      },
+      {
+        "name": "Dockerfile",
+        "data": 2.1
+      },
+      {
+        "name": "C",
+        "data": 1.9
+      },
+      {
+        "name": "Python",
+        "data": 1.1
+      }
+    ]
+  }
 ]
