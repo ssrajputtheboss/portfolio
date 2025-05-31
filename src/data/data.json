@@ -80,20 +80,6 @@
     ]
   },
   {
-    "header": "VirtualAssitant",
-    "url": "https://ssrajputtheboss.github.io/Virtual-Assistant/README.md",
-    "description": "A Virtual Assistant that can help in telling weather cricket scores and other tasks through voice or text input",
-    "stack": ["Python", "SQLite3"],
-    "isLive": false,
-    "projectLink": "#",
-    "langs": [
-      {
-        "name": "Python",
-        "data": 100.0
-      }
-    ]
-  },
-  {
     "header": "Collab-Code",
     "url": "https://ssrajputtheboss.github.io/collab-code-web/README.md",
     "description": "A real-time multiuser collaboration coding platform.",
