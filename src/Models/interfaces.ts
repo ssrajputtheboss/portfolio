@@ -41,7 +41,8 @@ export interface ReturnValue{
 export interface Skill {
     name: string ,
     icon: IconType,
-    iconColor: string
+    iconColor: string,
+    isActiveSkill: boolean
 }
 
 

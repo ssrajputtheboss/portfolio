@@ -4,8 +4,8 @@
     "url": "https://ssrajputtheboss.github.io/flutter_chat_app/README.md",
     "description": "A text chat application build using Flutter. Backend is build with NodeJS.",
     "stack": ["Flutter", "NodeJS", "PostgreSQL", "Express"],
-    "isLive": false,
-    "projectLink": "#",
+    "isLive": true,
+    "projectLink": "https://drive.google.com/file/d/1X2MffoB1DNykzzK6un3BbmvvMn1sh5dS/view?usp=sharing",
     "langs": [
       {
         "name": "Dart",
@@ -22,12 +22,12 @@
     ]
   },
   {
-    "header": "Text-Highlight",
-    "url": "https://ssrajputtheboss.github.io/text_highlight/README.md",
+    "header": "any_syntax_highlightert",
+    "url": "https://ssrajputtheboss.github.io/any_syntax_highlighter/README.md",
     "description": "A flutter widget for syntax highlighting supports upto 10 languages.",
     "stack": ["Flutter"],
     "isLive": true,
-    "projectLink": "https://pub.dev/packages/text_highlight",
+    "projectLink": "https://pub.dev/packages/any_syntax_highlighter",
     "langs": [
       {
         "name": "Dart",

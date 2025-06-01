@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Grid, Flex, Menu, MenuList, MenuButton, Icon } from '@chakra-ui/react';
-import { SiPython, SiJava, SiCplusplus, SiDart, SiC } from 'react-icons/si';
-import { FaChevronRight } from 'react-icons/fa';
+import { SiPython, SiCplusplus, SiDart, SiC } from 'react-icons/si';
+import { FaChevronRight , FaJava} from 'react-icons/fa';
 import SkillTag from '../SkillTag';
 
 export default function LangMenu(): React.ReactElement {
@@ -23,11 +23,11 @@ export default function LangMenu(): React.ReactElement {
       </MenuButton>
       <MenuList>
         <Grid templateColumns={{ lg: 'repeat(4, 1fr)', base: 'repeat(3,1fr)' }} gap={2} p={2}>
-          <SkillTag icon={SiPython} name='Python' iconColor='blue.600' />
-          <SkillTag icon={SiJava} name='Java' iconColor='red.500' />
-          <SkillTag icon={SiCplusplus} name='C++' iconColor='blue.900' />
-          <SkillTag icon={SiDart} name='Dart' iconColor='blue.200' />
-          <SkillTag icon={SiC} name='C' iconColor='blue.400' />
+          <SkillTag icon={SiPython} name='Python' iconColor='blue.600' isActiveSkill={true} />
+          <SkillTag icon={FaJava} name='Java' iconColor='red.500' isActiveSkill={true} />
+          <SkillTag icon={SiCplusplus} name='C++' iconColor='blue.900' isActiveSkill={false} />
+          <SkillTag icon={SiDart} name='Dart' iconColor='blue.200' isActiveSkill={true} />
+          <SkillTag icon={SiC} name='C' iconColor='blue.400' isActiveSkill={false} />
         </Grid>
       </MenuList>
     </Menu>

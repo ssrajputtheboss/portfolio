@@ -39,22 +39,22 @@ export default function ShowCard(props: Props): React.ReactElement {
             fontWeight='medium'
             transform={{ base: 'rotate(0deg)', lg: 'rotate(-90deg)' }}
             p='2'>
-            {'Full stack developer'}
+            Product Developer | DevOps
           </Text>
         </Flex>
         <Flex flexDir='column' alignItems='start' justifyContent='start' p='2'>
           <Flex w='full' flexDir='row' justifyContent='start' alignItems='center' p='2'>
             <Text textColor='black' fontSize='sm' mx='2'>
-              Currently B.Tech CSE 3rd year student at
+              Product Developer At Loyalty Juggernaut
             </Text>
-            <a href='https://www.iiitkottayam.ac.in/#!/home'>
+            <a href='https://www.lji.io/'>
               <Flex w='fit-content' flexDir='row' justifyContent='end' alignItems='center'>
                 <IconButton bgColor='black' aria-label='icon' h='7' w='7' mx='2'>
                   <Icon as={CgOrganisation} h='5' w='5' color='white' />
                 </IconButton>
                 <Text fontSize='sm' fontWeight='medium' color='green.900'>
                   {' '}
-                  IIIT Kottayam{' '}
+                  Loyalty Juggernaut{' '}
                 </Text>
               </Flex>
             </a>
